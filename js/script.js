@@ -9,3 +9,17 @@ function toggleTheme() {
         html.setAttribute("data-theme", "dark");
     }
 }
+
+
+// FUNÇÃO PARA TROCA DE PALAVRA NA ABA DE APRESENTAÇÃO
+const animated_cargo = document.querySelector('.animated-cargo');
+const animated_palavras = ['Back-End', 'UX e UI', "de Design"];
+let index = 0;
+
+function trocarPalavra() {
+    animated_cargo.textContent = animated_palavras[index];
+    index = (index + 1) % animated_palavras.length;
+
+} setInterval(trocarPalavra, 3000);
+
+trocarPalavra();
