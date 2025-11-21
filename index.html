@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Portfólio</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="#home">
-                <img src="./image/tec/logo-icon.png" alt="logo pessoal">
+            <a href="#home" class="logo">
+                <img src="./image/tec/logo-icon.png" alt="Logo pessoal de Weverton" />
                 <h3>Weverton</h3>
             </a>
 
@@ -25,142 +26,144 @@
 
             <div class="actions-nav">
                 <a href="#contact">
-                    <img src="./image/tec/message.png" alt="ícone">
-                    <p>Chamar</p>
+                    <img src="./image/tec/message.png" alt="Ícone de mensagem" />
                 </a>
+
+                <button onclick="toggleTheme()">
+                    <img src="./image/geral/theme-icon.png" alt="Alternar tema claro/escuro" />
+                </button>
             </div>
         </nav>
     </header>
 
     <main>
-        <!-- Conteúdo de abertuda do portfólio -->
+        <!-- Conteúdo de abertura do portfólio -->
         <section id="home" class="page">
             <div class="content">
                 <div class="informations">
-                    <h1>Olá, seja bem vindo!</h1>
+                    <h1>Olá! Aqui, cada projeto é uma jornada única.</h1>
                     <h2>Desenvolvedor <span class="animated-cargo">Front-End</span></h2>
-                    <p>Projetos e desing feitos com dedicação e otimização</p>
+                    <p>Projetos e designs criados com dedicação e otimizados para resultados excepcionais.</p>
 
                     <div class="actions-home">
                         <a href="#contact">
-                            <img src="./image/tec/message.png" alt="ícone">
+                            <img src="./image/tec/message.png" alt="Ícone de mensagem" />
                             <p>Contatos</p>
                         </a>
 
                         <a href="#project">
-                            <img src="./image/tec/vscode-icon.png" alt="ícone">
+                            <img src="./image/tec/vscode-icon.png" alt="Ícone do Visual Studio Code" />
                             <p>Projetos</p>
                         </a>
                     </div>
                 </div>
 
                 <div class="perfil">
-                    <img src="./image/geral/perfil.png" alt="Demonstração">
+                    <img src="./image/geral/perfil.png" alt="Foto de Weverton, desenvolvedor" />
                 </div>
             </div>
         </section>
 
-        <!-- Conteúdo de explicação e compreenção -->
+        <!-- Sobre Mim -->
         <section id="about" class="page">
             <div class="content">
-                <div class="informations">
-                    <h1>Sobre Mim</h1>
-                    <!-- Informações de textos -->
-                    <p>Olá, me chamo Weverton, tenho 17 anos e sou do Espírito Santo. Desde cedo, a tecnologia me
-                        fascina, seja através de jogos ou aplicativos. Essa paixão se intensificou e me levou a decidir
-                        seguir carreira como programador. Tenho experiência tanto no desenvolvimento front-end quanto no
-                        back-end. Confesso que meu interesse maior está no front-end, já que adoro a parte visual e a
-                        experiência que o público tem com o produto final.</p>
+                <h1>Sobre Mim</h1>
+                <p>Olá, sou Weverton, tenho 17 anos e sou do Espírito Santo. A tecnologia sempre foi minha paixão, desde
+                    os primeiros jogos e aplicativos que explorei. Com o tempo, essa paixão cresceu e me impulsionou a
+                    seguir a carreira de programador. Tenho experiência tanto no desenvolvimento front-end quanto
+                    back-end, mas é no front-end onde realmente encontro minha verdadeira motivação. Eu sou fascinado
+                    pelo design e pela experiência do usuário, e é essa parte visual do processo que mais me encanta –
+                    criar interfaces que são não apenas funcionais, mas também agradáveis e intuitivas para o usuário
+                    final.</p>
 
-                    <!-- Imagem para corte de muitas informações -->
-                    <img src="./image/geral/apresentação.jpg" alt="Imagem/Desing">
+                <img src="./image/geral/apresentação.jpg" alt="Imagem de apresentação de Weverton no trabalho" />
 
-                    <!-- Informações de textos -->
-                    <p>Olá, me chamo Weverton, tenho 17 anos e sou do Espírito Santo. Desde cedo, a tecnologia me
-                        fascina, seja através de jogos ou aplicativos. Essa paixão se intensificou e me levou a decidir
-                        seguir carreira como programador. Tenho experiência tanto no desenvolvimento front-end quanto no
-                        back-end. Confesso que meu interesse maior está no front-end, já que adoro a parte visual e a
-                        experiência que o público tem com o produto final.</p>
+                <p>Sempre que estou criando um projeto, meu foco está em como tornar a experiência do usuário não apenas
+                    eficiente, mas também agradável. Para mim, o design vai além da estética — ele é a ponte entre a
+                    tecnologia e as pessoas. Cada elemento na tela tem um propósito, e meu objetivo é garantir que esse
+                    propósito seja claro e intuitivo. Eu sou fascinado pela ideia de transformar uma ideia bruta em algo
+                    visualmente impactante, mas também funcional, criando interfaces que não apenas resolvem problemas,
+                    mas encantam quem as usa.</p>
 
-                    <!-- Imagem com as tecnologias aplicadas -->
-                    <h2>Conhecimentos</h2>
-                    <div class="dev-icons">
-                        <img src="./image/tec/html-icon.png" alt="tecnologia">
-                        <img src="./image/tec/css-icon.png" alt="tecnologia">
-                        <img src="./image/tec/js-icon.png" alt="tecnologia">
-                        <img src="./image/tec/java-icon.png" alt="tecnologia">
-                        <img src="./image/tec/python-icon.png" alt="tecnologia">
-                        <img src="./image/tec/figma-icon.png" alt="tecnologia">
-                        <img src="./image/tec/wordpress-icon.png" alt="tecnologia">
-                    </div>
+                <h2>Conhecimentos</h2>
+                <div class="dev-icons">
+                    <img src="./image/tec/html-icon.png" alt="Ícone de HTML" />
+                    <img src="./image/tec/css-icon.png" alt="Ícone de CSS" />
+                    <img src="./image/tec/js-icon.png" alt="Ícone de JavaScript" />
+                    <img src="./image/tec/java-icon.png" alt="Ícone de Java" />
+                    <img src="./image/tec/python-icon.png" alt="Ícone de Python" />
+                    <img src="./image/tec/figma-icon.png" alt="Ícone do Figma" />
+                    <img src="./image/tec/wordpress-icon.png" alt="Ícone do WordPress" />
                 </div>
             </div>
         </section>
 
-        <!-- Conteúdo de apresentação do meu trabalho -->
+        <!-- Serviços -->
         <section id="service" class="page">
             <div class="content">
                 <h1>Serviços</h1>
-
-                <!-- Grupo com os serviços -->
                 <div class="group">
-                    <div class="card">
-                        <img src="./image/geral/webpage-service.png" alt="serviço">
-                        <h3>Web</h3>
-                        <p>Desenvolvimento de sites profissionais.</p>
+                    <div class="card" role="article">
+                        <img src="./image/geral/webpage-service.png"
+                            alt="Ícone de Web Design, com uma página de código e design" />
+                        <h3>Web Design</h3>
+                        <p>Criação de sites profissionais e responsivos, com foco em usabilidade e experiência do
+                            usuário.</p>
                     </div>
 
-                    <div class="card">
-                        <img src="./image/geral/desing-service.png" alt="serviço">
-                        <h3>Web</h3>
-                        <p>Desenvolvimento de sites profissionais.</p>
+                    <div class="card" role="article">
+                        <img src="./image/geral/desing-service.png"
+                            alt="Ícone de Design, com um esquema de layout criativo" />
+                        <h3>Design</h3>
+                        <p>Desenvolvimento de interfaces atraentes, focadas em uma experiência visual impactante e
+                            intuitiva.</p>
                     </div>
 
-                    <div class="card">
-                        <img src="./image/geral/logica-service.png" alt="serviço">
-                        <h3>Web</h3>
-                        <p>Desenvolvimento de sites profissionais.</p>
+                    <div class="card" role="article">
+                        <img src="./image/geral/logica-service.png"
+                            alt="Ícone de APIs, com símbolos de dados e comunicação entre sistemas" />
+                        <h3>APIs</h3>
+                        <p>Integração e desenvolvimento de APIs robustas para conectar seu site a diversos serviços e
+                            plataformas.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Conteúdo para apresentação dos projetos recentes -->
+        <!-- Projetos Recentes -->
         <section id="project" class="page">
             <div class="content">
                 <h1>Projetos Recentes</h1>
-
-                <!-- Grupo com os projetos -->
                 <div class="group">
-                    <!-- Projetos separador -->
+                    <!-- Projeto 1: Landing Page -->
                     <div class="card">
-                        <img src="" alt="projeto">
+                        <img src="./image/projetos/landing-page-1.png"
+                            alt="Exemplo de Landing Page, layout responsivo com chamada para ação" />
                         <h3>Landing Page</h3>
-
-                        <a href="">
-                            <img src="./image/social/google.png" alt="icon">
+                        <a href="projeto1-detalhes.html" class="details-link">
+                            <img src="./image/social/google.png" alt="Ícone do Google" />
                             <p>Detalhes</p>
                         </a>
                     </div>
 
-                    <!-- Projetos separador -->
+                    <!-- Projeto 2: Landing Page -->
                     <div class="card">
-                        <img src="" alt="projeto">
+                        <img src="./image/projetos/landing-page-2.png"
+                            alt="Exemplo de Landing Page com formulário de captura" />
                         <h3>Landing Page</h3>
-
-                        <a href="">
-                            <img src="./image/social/google.png" alt="icon">
+                        <a href="projeto2-detalhes.html" class="details-link">
+                            <img src="./image/social/google.png" alt="Ícone do Google" />
                             <p>Detalhes</p>
                         </a>
                     </div>
 
-                    <!-- Projetos separador -->
+                    <!-- Projeto 3: Landing Page -->
                     <div class="card">
-                        <img src="" alt="projeto">
+                        <img src="./image/projetos/landing-page-3.png"
+                            alt="Exemplo de Landing Page com imagens chamativas e botão de inscrição" />
                         <h3>Landing Page</h3>
-
-                        <a href="">
-                            <img src="./image/social/google.png" alt="icon">
+                        <a href="projeto3-detalhes.html" class="details-link">
+                            <img src="./image/social/google.png" alt="Ícone do Google" />
                             <p>Detalhes</p>
                         </a>
                     </div>
@@ -168,32 +171,40 @@
             </div>
         </section>
 
-        <!-- Formas de entrar em contato -->
+        <!-- Contato -->
         <section id="contact" class="page">
             <div class="content">
                 <h1>Contatos</h1>
-
                 <form action="email" method="post">
                     <label for="username">Nome</label>
-                    <input type="text" placeholder="Nome" required>
+                    <input type="text" id="username" name="username" placeholder="Digite seu nome" required />
 
                     <label for="email">E-mail</label>
-                    <input type="email" placeholder="E-mail" required>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required />
 
-                    <label for="Mensagem">Mensagem</label>
-                    <textarea id="mensagem" required></textarea>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" required></textarea>
 
-                    <button>
-                        <img src="./image/social/gmail-icon.png" alt="ícone">
+                    <button type="submit">
+                        <img src="./image/social/gmail-icon.png" alt="Ícone de envio de email" />
                         <p>Enviar</p>
                     </button>
                 </form>
 
+                <!-- Redes Sociais -->
                 <div class="midia-social">
-                    <img src="./image/social/github-icon.png" alt="social">
-                    <img src="./image/social/twitter-icon.png" alt="social">
-                    <img src="./image/social/instagram-icon.png" alt="social">
-                    <img src="./image/social/whatsapp-icon.png" alt="social">
+                    <a href="https://github.com/seu-usuario" target="_blank" aria-label="Visite meu GitHub">
+                        <img src="./image/social/github-icon.png" alt="Ícone do GitHub" />
+                    </a>
+                    <a href="https://twitter.com/seu-usuario" target="_blank" aria-label="Siga-me no Twitter">
+                        <img src="./image/social/twitter-icon.png" alt="Ícone do Twitter" />
+                    </a>
+                    <a href="https://instagram.com/seu-usuario" target="_blank" aria-label="Siga-me no Instagram">
+                        <img src="./image/social/instagram-icon.png" alt="Ícone do Instagram" />
+                    </a>
+                    <a href="https://wa.me/seu-numero" target="_blank" aria-label="Envie uma mensagem no WhatsApp">
+                        <img src="./image/social/whatsapp-icon.png" alt="Ícone do WhatsApp" />
+                    </a>
                 </div>
             </div>
         </section>
@@ -202,7 +213,7 @@
     <footer>
         <section>
             <h2>Weverton</h2>
-            <h3>Desing & Web</h3>
+            <h3>Design & Web</h3>
         </section>
 
         <section>
@@ -218,13 +229,16 @@
 
         <section>
             <div class="galery">
-                <img src="" alt="galeria">
-                <img src="" alt="galeria">
-                <img src="" alt="galeria">
-                <img src="" alt="galeria">
+                <img src="" alt="galeria" />
+                <img src="" alt="galeria" />
+                <img src="" alt="galeria" />
+                <img src="" alt="galeria" />
             </div>
         </section>
     </footer>
+
+    <!-- Scripts -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

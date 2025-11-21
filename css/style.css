@@ -1,0 +1,141 @@
+/* FONTES PRESENTES NA PÁGINA */
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+/*  VARÉVAIS PARA MELHOR COLEÇÃO DE CORES */
+:root {
+    --background-color: #F9F7F7;
+    --cards-color: #DBE2EF;
+    --focus-color: #3F72AF;
+    --text-color: #112D4E;
+}
+
+[data-theme="dark"] {
+    --background-color: #222831;
+    --cards-color: #393E46;
+    --focus-color: #00ADB5;
+    --text-color: #EEEEEE;
+}
+
+/* RESETAÇÃO DAS BORDAS DA PÁGINA */
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* ESTILIZAÇÃO DA PÁGINA AO TODO */
+html,
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+/* ESTILIZAÇÃO GERAL DOS ELEMENTOS */
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+P,
+a {
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+p {
+    max-width: 800px;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+a {
+    transition: 0.5s ease, border-bottom 0.5s ease;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+}
+
+button {
+    transition: 0.5s ease, border-bottom 0.5s ease;
+    border: 2px solid transparent;
+}
+
+/* ESTILIZAÇÃO DO CABEÇALHO */
+header {
+    border-bottom: 2px solid var(--cards-color);
+    background-color: var(--background-color);
+    padding: 1rem 2rem;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+}
+
+header nav {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+header nav .logo {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+}
+
+header nav .logo img {
+    object-fit: cover;
+    height: auto;
+    width: 50px;
+}
+
+header nav .logo h3 {
+    font-size: 32px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li a:hover {
+    border-bottom-color: var(--focus-color);
+    color: var(--focus-color);
+}
+
+header nav .actions-nav {
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+}
+
+header nav .actions-nav button,
+header nav .actions-nav a {
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 50px;
+    align-items: center;
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+header nav .actions-nav button img,
+header nav .actions-nav a img {
+    object-fit: contain;
+    max-height: 50px;
+    max-width: 50px;
+    height: auto;
+    width: 100%;
+}
