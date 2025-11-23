@@ -173,6 +173,37 @@ main .page .content {
     width: 100%;
 }
 
+main .page .content .group {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+
+main .page .content .group .card {
+    border: 5px solid var(--cards-color);
+    background-color: var(--cards-color);
+    transition: 1.0s ease;
+    border-radius: 30px;
+    text-align: center;
+    max-width: 300px;
+    padding: 1rem;
+    width: 100%;
+}
+
+main .page .content .group .card:hover {
+    background-color: var(--background-color);
+    border-color: var(--focus-color);
+}
+
+main .page .content .group .card img {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
 
 /* ESTILIZAÇÃO DE ELEMENTOS DE CONTEÚDO GERAL */
 main .page .content h1 {
@@ -303,33 +334,45 @@ main #service .content {
     flex-direction: column;
 }
 
-main #service .content .group {
-    justify-content: center;
+
+/* ESTILIZAÇÃO DA PÁGINA SOBRE MEUS PROJETOS */
+main #project .content {
+    flex-direction: column;
+}
+
+
+/* ESTILIZAÇÃO DO RODAPÉ DA PÁGINA */
+footer {
+    border-top: solid 5px var(--cards-color);
+    justify-content: space-between;
     align-items: center;
+    display: flex;
+}
+
+footer section {
+    padding: 1rem 2rem;
+}
+
+footer section ul {
+    list-style: none;
     flex-wrap: wrap;
     display: flex;
-    width: 100%;
-    gap: 1rem;
+    gap: 2rem;
 }
 
-main #service .content .group .card {
-    border: 5px solid var(--cards-color);
-    background-color: var(--cards-color);
-    transition: 1.0s ease;
-    border-radius: 30px;
-    text-align: center;
-    max-width: 300px;
-    padding: 1rem;
-    width: 100%;
+footer section ul a:hover {
+    color: var(--focus-color);
 }
 
-main #service .content .group .card:hover {
-    background-color: var(--background-color);
-    border-color: var(--focus-color);
-    transform: scale(1.1);
+footer section .galery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    display: grid;
+    gap: 10px;
 }
 
-main #service .content .group .card img {
-    margin-bottom: 2rem;
+footer section .galery img {
+    max-width: 100px;
+    height: auto;
     width: 100%;
 }
