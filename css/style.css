@@ -149,6 +149,10 @@ header nav .actions-nav a img {
     height: auto;
 }
 
+header nav .actions-nav .mobile {
+    display: none;
+}
+
 
 /* ESTILIZAÇÃO DO CONTEÚDO GERAL DA PÁGINA */
 main {
@@ -165,6 +169,7 @@ main .page {
 
 main .page .content {
     justify-content: center;
+    text-align: center;
     align-items: center;
     margin-top: 100px;
     padding: 0 2rem;
@@ -251,6 +256,7 @@ main #home .content .informations p {
 }
 
 main #home .content .informations .actions-home {
+    margin-bottom: 5rem;
     margin-top: 1rem;
     display: flex;
     gap: 2rem;
@@ -259,7 +265,6 @@ main #home .content .informations .actions-home {
 main #home .content .informations .actions-home a {
     background-color: var(--cards-color);
     border-radius: 50px;
-    margin-bottom: 5rem;
     padding: 0 1rem;
     display: flex;
     gap: 0.5rem;
@@ -418,7 +423,9 @@ footer {
     border-top: solid 5px var(--cards-color);
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     margin-top: 3rem;
+    flex-wrap: wrap;
     display: flex;
 }
 
@@ -448,4 +455,61 @@ footer section .galery img {
     max-width: 100px;
     height: auto;
     width: 100%;
+}
+
+
+
+/* RESPONSIBILIDADE PARA DISPOSITIVOS MENORES */
+@media (max-width: 720px) {
+    header nav .logo h3 {
+        font-size: 26px;
+    }
+
+    header nav ul {
+        background-color: var(--background-color);
+        flex-direction: column;
+        position: absolute;
+        padding: 3rem 1rem;
+        display: none;
+        height: 100vh;
+        z-index: 100;
+        width: 100%;
+        top: 80px;
+        left: 0;
+    }
+
+    header nav ul li {
+        margin-bottom: 1rem;
+    }
+
+    header nav ul li a {
+        border-bottom: solid 5px var(--focus-color);
+
+        font-size: 32px;
+    }
+
+    header nav .actions-nav {
+        gap: 1rem;
+    }
+
+
+
+    main #home .content .informations {
+        text-align: center;
+    }
+
+    main #home .content .informations .actions-home {
+        flex-direction: column;
+    }
+
+
+
+    footer {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    footer section ul {
+        display: none;
+    }
 }
