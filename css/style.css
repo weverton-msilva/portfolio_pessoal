@@ -53,7 +53,7 @@ h3 {
 P,
 a {
     color: var(--text-color);
-    font-size: 18px;
+    font-size: 20px;
 }
 
 p {
@@ -166,8 +166,26 @@ main .page .content {
     align-items: center;
     margin-top: 100px;
     padding: 0 2rem;
+    flex-wrap: wrap;
     display: flex;
     width: 100%;
+}
+
+
+/* ESTILIZAÇÃO DE ELEMENTOS DE CONTEÚDO GERAL */
+main .page .content h1 {
+    margin-bottom: 3rem;
+    font-size: 52px;
+}
+
+main .page .content h2 {
+    font-size: 42px;
+    margin: 2rem 0;
+}
+
+main .page .content img {
+    border-radius: 20px;
+    object-fit: cover;
 }
 
 
@@ -178,7 +196,6 @@ main #home {
 
 main #home .content {
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 main #home .content .informations {
@@ -186,7 +203,7 @@ main #home .content .informations {
     width: 100%;
 }
 
-main #home .content .informations h1 {
+main #home .content .informations .title-home {
     margin-bottom: 1rem;
     font-size: 48px;
 }
@@ -226,7 +243,7 @@ main #home .content .informations .actions-home a img {
 }
 
 main #home .perfil {
-    max-width: 400px;
+    max-width: 500px;
 }
 
 main #home .perfil img {
@@ -241,4 +258,40 @@ main #home .perfil img {
 main #home .perfil img:hover {
     border-color: var(--focus-color);
     transform: scale(1.1);
+}
+
+
+/* ESTILIZAÇÃO DA PÁGINA SOBRE MIM */
+main #about .content {
+    flex-direction: column;
+}
+
+main #about .content img {
+    border: 5px solid transparent;
+    transition: 0.5s ease;
+    max-width: 800px;
+    margin: 2rem 0;
+    height: auto;
+    width: 100%;
+}
+
+main #about .content img:hover {
+    border-color: var(--focus-color);
+}
+
+main #about .content .dev-icons {
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+main #about .content .dev-icons img {
+    background-color: var(--cards-color);
+    max-width: 100px;
+    padding: 0.5rem;
+    width: 100%;
 }
