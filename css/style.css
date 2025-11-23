@@ -74,6 +74,11 @@ button {
     cursor: pointer;
 }
 
+img {
+    object-fit: cover;
+    width: 100%;
+}
+
 
 /* ESTILIZAÇÃO DO CABEÇALHO */
 header {
@@ -101,7 +106,6 @@ header nav .logo {
 }
 
 header nav .logo img {
-    object-fit: cover;
     height: auto;
     width: 50px;
 }
@@ -140,11 +144,9 @@ header nav .actions-nav a {
 
 header nav .actions-nav button img,
 header nav .actions-nav a img {
-    object-fit: contain;
     max-height: 50px;
     max-width: 50px;
     height: auto;
-    width: 100%;
 }
 
 
@@ -185,7 +187,6 @@ main .page .content h2 {
 
 main .page .content img {
     border-radius: 20px;
-    object-fit: cover;
 }
 
 
@@ -293,5 +294,42 @@ main #about .content .dev-icons img {
     background-color: var(--cards-color);
     max-width: 100px;
     padding: 0.5rem;
+    width: 100%;
+}
+
+
+/* ESTILIZAÇÃO DA PÁGINA SOBRE MEUS TRABALHOS */
+main #service .content {
+    flex-direction: column;
+}
+
+main #service .content .group {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+main #service .content .group .card {
+    border: 5px solid var(--cards-color);
+    background-color: var(--cards-color);
+    transition: 1.0s ease;
+    border-radius: 30px;
+    text-align: center;
+    max-width: 300px;
+    padding: 1rem;
+    width: 100%;
+}
+
+main #service .content .group .card:hover {
+    background-color: var(--background-color);
+    border-color: var(--focus-color);
+    transform: scale(1.1);
+}
+
+main #service .content .group .card img {
+    margin-bottom: 2rem;
     width: 100%;
 }
