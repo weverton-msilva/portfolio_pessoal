@@ -53,6 +53,7 @@ h3 {
 P,
 a {
     color: var(--text-color);
+    text-align: justify;
     font-size: 20px;
 }
 
@@ -213,10 +214,12 @@ main .page .content .group .card img {
 /* ESTILIZAÇÃO DE ELEMENTOS DE CONTEÚDO GERAL */
 main .page .content h1 {
     margin-bottom: 3rem;
+    text-align: justify;
     font-size: 52px;
 }
 
 main .page .content h2 {
+    text-align: justify;
     font-size: 42px;
     margin: 2rem 0;
 }
@@ -493,6 +496,10 @@ footer section .galery img {
     }
 
 
+    main .page .content h1,
+    main .page .content h2 {
+        text-align: center;
+    }
 
     main #home .content .informations {
         text-align: center;
